@@ -82,7 +82,7 @@ function create_key() {
     /usr/local/bin/piasa-cli stop
     sleep 10
   fi
-}  
+}
 
 function create_conf() {
   echo "rpcuser=U"`shuf -i 10000000-99999999 -n 1` >> piasa.conf_TEMP
@@ -133,3 +133,4 @@ echo -e "${GREEN}Sentinel${NC} is installed in ${GREEN}/root/.piasa/sentinel${NC
 echo -e "Sentinel logs is: ${GREEN}/root/.piasa/sentinel.log${NC}"
 fi
 echo -e " "
+
